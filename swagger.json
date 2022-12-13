@@ -112,7 +112,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/definitions/Specification"
+                                "$ref": "#/components/schemas/Specification"
                             }
                         }
                     }
@@ -128,15 +128,17 @@
             }
         }
     },
-    "definitions": {
-        "Specification": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
+    "components": {
+        "schemas": {
+            "Specification": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
                 }
             }
         }
